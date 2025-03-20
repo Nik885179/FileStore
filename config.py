@@ -9,33 +9,38 @@ from logging.handlers import RotatingFileHandler
 
 #rohit_1888 on Tg
 
-#Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7542241757:")
-#Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", ""))
-#Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "")
-#Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002170811388"))
-# NAMA OWNER
-OWNER = os.environ.get("OWNER", "sewxiy")
-#OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "7328629001"))
-#Port
-PORT = os.environ.get("PORT", "8030")
-#Database
-DB_URI = os.environ.get("DATABASE_URL", "")
-DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
+#your bot token here from https://telegram.me/BotFather
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7877034637:AAE-EELDcUsgRs4qxKsA7abMi7cPSKCv3H4") 
+#your api id from https://my.telegram.org/apps
+APP_ID = int(os.environ.get("APP_ID", "21484586"))
+#your api hash from https://my.telegram.org/apps
+API_HASH = os.environ.get("API_HASH", "d1d12be1da9b5a1cb8356c0bf0695a23")
+#your channel_id from https://t.me/MissRose_bot by forwarding dummy message to rose and applying command `/id` in reply to that message
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002298993427"))
+#your id of telegram can be found by https://t.me/MissRose_bot with '/id' command
+OWNER_ID = int(os.environ.get("OWNER_ID", "5915807321"))
+#port set to default 8080
+PORT = os.environ.get("PORT", "6666")
+#your database url mongodb only You can use mongo atlas free cloud database
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://koyeb77user:rohit870@cluster0.wgdkp.mongodb.net/?retryWrites=true&w=majority")
+#your database name
+DB_NAME = os.environ.get("DB_NAME", "filestorabot")
 
+#for creating telegram thread for bot to improve performance of the bot
+TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
+#your start default command message.
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link. ")
+#your telegram tag without @
+OWNER_TAG = os.environ.get("OWNER_TAG", "silentalways07")
 #Time in seconds for message delete, put 0 to never delete
-TIME = int(os.environ.get("TIME", "10"))
+TIME = int(os.environ.get("TIME", "0"))
 
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL1 = int(os.environ.get("FORCE_SUB_CHANNEL1", "-1002215102799"))
+FORCE_SUB_CHANNEL1 = int(os.environ.get("FORCE_SUB_CHANNEL1", "-1002429448266"))
 #put 0 to disable
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "0"))#put 0 to disable
-FORCE_SUB_CHANNEL3 = int(os.environ.get("FORCE_SUB_CHANNEL3", "0"))#put 0 to disable
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002145632049"))#put 0 to disable
+FORCE_SUB_CHANNEL3 = int(os.environ.get("FORCE_SUB_CHANNEL3", "-1002125606566"))#put 0 to disable
 FORCE_SUB_CHANNEL4 = int(os.environ.get("FORCE_SUB_CHANNEL4", "0"))#put 0 to disable
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
